@@ -1,0 +1,213 @@
+
+
+
+
+
+.user_panel .image{
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+}
+.user_panel .image img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.user_panel .info_user{
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  text-align: center;
+}
+
+
+.row_indicator_table{
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.row_indicator_table .form-group{
+  position: relative;
+}
+.row_indicator_table .label_icon{
+  position: absolute;
+  top: 80%;
+  right: 20px;
+  transform: translateY(-80%);
+}
+
+.col_btn button{
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.col_btn button i{
+  margin-right: 5px;
+}
+
+
+/*Table*/
+.row_table .card_table{
+  overflow: auto;
+}
+.kolom_opt{
+  position: relative;
+}
+.kolom_opt .btn_opt{
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.menu_opt{
+  width: 200px;
+  height: auto;
+  z-index: 9999;
+  background: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  position: absolute;
+  left: -180px;
+  top: 0;
+}
+.menu_opt .menu_colom{
+  width: 100%;
+  height: auto;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.modal-content, .modal-dialog{
+  border-radius: 0;
+}
+.modal-content > div{
+  border-radius: 0;
+}
+.modal .modal-body{
+  padding-top: 20px;
+  padding-bottom: 20px;
+} 
+.modal form >div{
+  margin-bottom: 20px;
+}
+.menu_colom .col_icon{
+  width: 10%;
+  margin-right: 5px;
+}
+.menu_colom p{
+  margin-bottom: 0;
+}
+
+.modal-header{
+  background: darkcyan;
+  color: #fff;
+}
+.input_rules{
+  color: green !important;
+  font-style: italic !important;
+}
+
+/* class .ACTIVE dan class .DISABLE didapatkan berdasarkan nilai status dari database. Jadi ini berhubungan dengan backend database */
+.kolom_status button{
+  text-align: center;
+  color: #fff !important;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 20px;
+}
+.ACTIVE button{
+  background: green;
+}
+.kolom_status.ACTIVE button{
+
+  animation: animasiStatus;
+  animation-duration: .5s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+
+}
+.DISABLE button{
+  background: red;
+  
+}
+
+
+@keyframes animasiStatus{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+
+
+}
+
+.box_upload{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border: 1px dashed red;
+  padding: 20px;
+}
+.box_upload input[type=file]{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  opacity: 0;  
+}
+.box_upload > div{
+  width: 100%;
+  height: 100%;
+}
+.before_upload{
+  text-align: center;
+  height: auto;
+}
+.after_upload{
+  display: none;
+}
+.after_upload img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+/* =========== Berlaku sampai fitur terkait di aktifkan   */
+/* Untuk filter pada table  */
+/*.row_indicator_table > div{
+  display: none;
+}*/
+.row_indicator_table > div.col_btn{
+  display: block;
+}
+
+/*Untuk nav bottom pagination */
+/*.pagination_section{
+  display: none;
+}
+*/
+
+/*Update form*/
+.deskripsi_lama{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px dashed #000;
+}

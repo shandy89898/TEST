@@ -1,0 +1,134 @@
+.container_comment{
+	width: 100%;
+}
+.container_data_comment{
+	margin-bottom: 30px;
+}
+/*End Of Basic Comment*/
+.section_profile{
+	width: 40px;
+	height: 40px;
+	border-radius: 50% !important;
+	margin-right: 10px;
+}
+.section_profile img{
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+}
+.section_box, .section_form{
+	padding: 0;
+	color: inherit;
+	font-size: inherit;
+}
+.section_box > .toggle_react a,.section_box > .toggle_react .btn_toggle_comment{
+	padding: 0;
+	padding-top: 10px;
+	margin-right: 20px;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	box-shadow: none;
+	border: none;
+}
+.toggle_react .nav-item span{
+	margin-left: 8px;
+}
+.toggle_react .reply_btn{
+	cursor: pointer;
+}
+.section_box > .comment_box{
+	width: 100%;
+	height: auto;
+	max-height: 200px;
+	overflow-y: auto;
+	background: #ccc;
+	padding: 10px;
+	padding-top: 7px;
+	padding-bottom: 5px;
+	font-size: inherit;
+	color: inherit;
+	border-radius: 12px;
+}
+.comment_box > .user_name{
+	margin-bottom:5;
+}
+.input_comment{
+	margin-bottom: 0;
+}
+.section_form .form-control, .section_form .btn_custom{
+	background: none;
+	border:none;
+	border-bottom: 2px solid #ccc;
+	color: inherit;
+	font-size: inherit;
+	height: 50px;
+}
+.section_form:not(.data_comment .section_form){
+	margin-bottom: 15px;
+}
+.section_form .custom_highlight{
+	width: 100%;
+	margin-top: 20px;
+	display: none;
+}
+.custom_highlight .file_custom{
+	display: inline-block;
+	width: 70px;
+	height: 80px;
+}
+.file_custom img{
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+}
+.section_form .form_submit button{
+	width: 30%;
+	font-weight: bolder;
+}
+.form_submit button[type=button]{
+	background: none;
+	border:none;
+}
+.form_submit:not(.data_comment .form_submit){
+	display: none;
+}
+.section_option{
+	position: relative;
+}
+.section_option button{
+	padding: 0;
+	margin-top: 20px;
+}
+.btn_toggle_comment{
+	padding: 0;
+	box-shadow: inherit;
+	border: inherit;
+	background: inherit;
+}
+.data_comment .input_comment, .toggle_show_reply{
+	padding: 0;
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 40px;
+	display: none;
+}
+.toggle_show_reply{
+	display: block;
+	margin-bottom: 10px;
+	color: blue;
+}
+.toggle_show_reply .btn_toggle_comment{
+	font-size: inherit;
+	color: inherit;
+}
+.toggle_show_reply span{
+	margin-left: 10px;
+}
+/*End Of Basic Comment*/
+/* Data Comment reply */
+.data_comment.reply{
+	padding-left: 55px;	
+	display: none;
+}
+/* End Of Data Comment reply */

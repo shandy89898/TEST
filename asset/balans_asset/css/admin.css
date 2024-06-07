@@ -1,0 +1,284 @@
+/*============== Sidebar*/
+.sidebar{
+	width: 270px;
+	height: 100%;
+}
+.btn_close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none !important;
+}
+.btn_close *{
+	font-size: 50px;
+}
+.content_sidebar{
+	position: fixed;
+	width: inherit;
+	height: 100%;
+	background: #fff;
+	padding: 10px;
+	overflow: auto;
+}
+.content_sidebar *{
+	color: #000;
+}
+
+
+
+.row_menu{
+	padding: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+}
+.row_menu *{
+	font-size: 17px !important;
+}
+
+.row_menu a{
+	text-decoration: none!important;
+}
+.header_menu_data{
+	display: flex;
+	padding: 0 !important;
+	cursor: pointer;
+}
+.container_sub_menu{
+	display: none;
+	background: darkcyan;
+	padding: 10px;
+	padding-left: 30px !important;
+	padding-bottom: 0;
+	border-radius: 20px;
+	transition: 2s;
+	overflow: auto;
+}
+.row_sub_menu{
+	margin-bottom: 20px;
+}
+.row_sub_menu *{
+	color: #fff;
+}
+.row.jarak{
+	margin-bottom: 50px;
+}
+.logo{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}	
+.title_logo{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.row_header{
+	margin-bottom: 20px;
+}
+
+
+/*Content Prime*/
+.content_prime{
+	margin-left: -30px;
+	background: var( --basicBg );
+	border-top-left-radius: 20px;
+	padding: 20px;
+	height: auto;
+}
+.shadow{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: var(--basicBg);
+	margin-left: -15px;
+}
+.content_prime > .container-fluid > .row > div{
+	background: #fff;
+	border-radius: 20px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+/*Nav degan responsive ukuran layar*/
+.nav_responsive{
+	width: auto;
+	height: auto;
+	padding: 20px;
+	padding-top: 10px !important;
+	padding-bottom: 4px !important;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	box-shadow: 2px 2px 2px #000;
+	z-index: 9999;
+	background: #fff;
+	border: 2px solid darkcyan;
+	border-radius: 20px;
+}
+
+/*Nav Responsive Row Dekstop*/
+.row_dekstop .user_img{
+	width: 30px;
+	height: 30px;
+}
+.row_dekstop .user_id{
+	margin-left: 10px;
+}
+.row_menu_modal{
+}
+.row_menu_modal  .menu_modal{
+	display: none;
+	padding-left: 0;
+}
+.menu_modal > a{
+	text-decoration: none !important;
+	color: #000 !important;
+
+}
+.menu_modal .container_menu_user{
+	padding: 10px;
+	padding-left: 25px;
+	border-radius: 20px;
+	/*background: red;
+	transition: .5s;
+	*/
+}
+.container_menu_user .col_icon_menu{
+	margin-right: 20px !important;
+}
+
+.container_menu_user:hover{
+	background: darkcyan;
+	color: #fff;
+}
+
+.nav_responsive .row_mobile{
+	display: none;
+}
+.nav_responsive .btn_sidebar{
+	cursor: pointer;
+}
+
+@media( max-width:  576px){
+	.nav_responsive{
+		position: fixed;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80%;
+		height: auto;
+	}
+
+	/*Hilangkan semua elemen div kecual menu_modal*/
+	.row_dekstop{
+		display: none;
+	}
+	.menu_modal{
+		position: absolute;
+		bottom: -110px;
+		background: #fff;
+		border-radius: 20px;
+		border: 2px solid darkcyan;
+		padding: 20px;
+		padding-top: 10px;
+		padding-bottom: 0;
+
+	}
+	.row_mobile{
+		display: flex !important;
+	}
+	.img_el{
+		width: 30%;
+		text-align: center;
+		/*background: red;*/
+	}
+	.row_mobile img{ 
+		width: 40px;
+		height: 40px;
+	}
+	.img_logo img{
+		width: 50px;
+		height: 50px;
+		margin-top: -10px;
+	}
+	.row_mobile{
+		font-size: 30px;
+	}
+	.img_logo{
+		text-align: center;
+		padding: 0;
+	}
+
+
+	.btn_close{
+		display: block!important;
+	}
+	.sidebar{
+		display: none;
+	}
+	.content_sidebar{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 999999;
+	}
+
+	.content_prime{
+		margin-left: 0;
+		padding-top: 100px;
+	}
+
+
+}
+
+
+/*Untuk upload form*/
+.form_upload_section .container_formUpload{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	border: 2px dashed red;
+	position: relative;
+}
+.container_formUpload input[type=file]{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.container_formUpload .after{
+	display: none;
+}
+
+.container_formUpload.upload_img { 
+	width: 200px;
+	height: 200px;
+	margin: auto;
+}
+.container_formUpload.upload_img .frame{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 1px;
+	/*display: none;*/
+
+}
+.container_formUpload.upload_img .frame img{
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+}
+
+/*.content_container_sidebar{
+	height: auto;
+	background: red;
+	overflow: auto;
+	}*/

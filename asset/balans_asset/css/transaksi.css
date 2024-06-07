@@ -1,0 +1,296 @@
+
+
+/*Keranjang*/
+.nav_header{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	box-shadow:1px 1px 1px 1px #ccc;
+}
+.checkout_page .nav_header .title_info{
+	font-weight: bolder;
+}
+.container_data_cart{
+	box-shadow: 1px 1px 1px 1px #ccc;
+	margin-top: 30px;
+}
+.row_data_cart{
+	padding: 20px;
+	height: auto;
+	width: 100%;
+	border-bottom: 2px solid darkcyan;
+}
+.row_data_cart .img_detail{
+	width: 80px;
+	height: auto;
+	margin-right: 10px;
+}
+.img_detail img{
+	width: 100%;
+	height: 70px;
+}
+.cart_detail .qty_produk{
+	color: grey;
+	line-height: 0;
+	margin-bottom: 20px;
+}
+.row_data_cart .indicator_cart{
+	padding-left: 0;
+	padding-top: 30px;
+	position: relative;
+}
+.indicator_cart .indicator_box{
+	position: relative;
+	width: 90%;
+	height: auto;
+}
+.indicator_box .indicator_input{
+	width: 100%;
+	height: auto;
+	border: 0;
+	/*border-bottom: 1px solid #000;*/
+	text-align: center;
+}
+.indicator_box button{
+	position: absolute;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+}
+#btn_plus_indicator{
+	right: 0;
+}
+#btn_minus_indicator{
+	left: 0;
+}
+.indicator_totalHarga{
+	margin-top: 30px;
+}
+
+.container_data_cart{
+	border-radius: 4px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.container_data_cart .row_cart_footer{
+	padding: 20px;
+	background: darkcyan;
+	color: #fff;
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+
+.cart_rincian{
+	padding: 0;
+	padding-left: 10px;
+}
+.cart_rincian .box_rincian{
+	box-shadow: 1px 1px 1px 1px #ccc;
+	border-radius: 30px;
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	padding-bottom: 30px;
+}
+.cart_rincian .box_rincian > div{
+	padding: 10px;
+}
+.cart_rincian .box_rincian .row{
+	padding-left: 0 !important;
+}
+.header_cart_rincian{
+	padding: 20px;
+	border-bottom: 2px solid #ccc
+}
+.body_cart_rincian{
+	padding: 20px;
+}
+.indicator_totalHarga *{
+	font-weight: bolder;
+	color: darkcyan;
+}
+
+
+.detail_cart_rincian .detail_transaksi{
+	border-bottom: 2px solid #ccc;
+}
+
+.detail_transaksi .item_transaksi{
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+.item_transaksi p{
+	width: 50%;
+}
+.item_transaksi .judul_item{
+	text-align: left;
+}
+.item_transaksi .nilai_item{
+	text-align: right;
+}
+.item_transaksi.item_rd *{
+	color: red;
+}
+
+
+
+.detail_cart_rincian .total_transaksi{
+}
+
+
+
+/* Checkout */
+.checkout_page {
+
+}
+.row_data_cart.data_checkout > div{
+	padding: 0;
+}
+.body_checkout .indicator_totalHarga{
+	margin-top: 0;
+}
+
+/* Konfirmasi Pembayaran */
+.item_rincian .judul{
+	font-size: 12px;
+	color: grey;
+	margin-bottom: 5px;
+}
+.item_rincian .nilai{
+	font-weight: bolder;
+}
+
+.row_info_pembayaran{
+	margin-bottom: 5px !important;
+}
+
+
+
+
+@media( max-width : 600px){
+
+	.container_content{
+		padding: 0 !important;
+		background: none !important;
+	}
+
+	.content_cart{
+		padding: 0!important;
+	}
+	.content_cart .title_content_cart{
+		text-align: center;
+	}
+	.content_cart form {
+		margin-top: 30px;
+	}
+	.row_data_cart > div{
+		padding-left: 0 !important;
+		margin-left: 0 !important;
+	}
+	.indicator_cart{
+		margin-top: 20px;
+		padding: 20px !important;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+	.indicator_cart .indicator_box{
+		width: 100%;
+	}
+
+	.cart_rincian{
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+
+
+	.row_transaksi{
+		/*Beralaku untuk cart dan transaksi*/
+		flex-direction: column-reverse;
+	}
+
+	/*Checkout responsive*/
+	.checkout_page .indicator_totalHarga{
+		padding-top: 50px;
+	}
+
+
+}
+
+
+
+/*Product view*/
+.img_frame{
+	width: 100%;
+	height: 400px;
+}
+.img_frame img{
+	width: 100%;
+	height: 100%; 
+}
+.img_indicator{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	max-width: 100%;
+	display: flex;
+	overflow: auto;
+}
+.img_indicator img{
+	border-radius: 4px;
+	width: 90px;
+	height: 90px;
+	margin-right: 20px;
+	cursor: pointer;
+
+}
+.img_indicator img.active{
+	border: 1px solid orange !important;
+}
+.col_product_info{
+	padding-top: 50px !important;
+}
+.col_product_info > div{
+	margin-bottom: 20px;
+}
+.product_button{
+	display: flex;
+}
+.product_button .indicator_cart{
+	width: 100%;
+	height: 50px;
+	/*background: #ccc !important ;*/
+	padding: 10px;
+	padding-top: 5px;
+	border: 1px solid #ccc;
+	margin-right: 20px;
+	margin-bottom: 30px;
+
+}
+.product_button .indicator_cart .indicator_box{
+	width: 100%;
+	height: 100%;
+}
+.product_button .indicator_box input{
+	background: none;
+	height: auto !important;
+}
+.product_button .indicator_cart, .product_button .btn_order{
+	border-radius: 20px;
+}
+.product_button .btn_order{
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+.btn_order i{
+	margin-left: 10px;
+}
+.text_info{
+	margin-bottom: 10px;
+}
+.text_info span{
+	font-weight: bolder;
+}

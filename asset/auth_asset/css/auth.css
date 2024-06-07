@@ -1,0 +1,248 @@
+
+.body_background{
+	width: 100%;
+	height: 100%;
+}
+.body_background img{
+	width: 100%;
+	height: 100%;
+}
+.container_form{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+
+}
+.box_form{
+	background: #fff;
+	border: 2px solid #000;
+	border-radius: 10px;
+	padding: 20px;
+
+}
+.left_section,.right_section{
+	position: relative;
+	overflow: hidden;
+}
+.page_title{
+	margin-bottom: 30px;
+}
+
+
+.form_section form input{
+	border: none;
+	border-bottom: 2px solid #ccc;
+	border-radius: 0;
+	padding-left: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.content_section{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 30%;
+	transform: translateY(-30%);
+	text-align: center;
+	font-family: pacific;
+}
+.content_section img{
+	width: 100%;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+:root{
+	--top_imgContent_section : 40%
+}
+.sign_page.img_section .content_section
+{
+	top: var(--top_imgContent_section);
+	transform: translateY(-50%);
+}
+
+
+
+.indicator{
+	position: absolute;
+	bottom: -40px;
+	left: 73%;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	background: #fff;
+	border: 2px solid #000;
+	border-radius: 20px;
+	z-index: 999;
+	transition: 1s;
+}
+.indicator.login{
+	left: 73%;
+}
+.indicator.sign{
+	left: 10px;
+}
+.indicator > div{
+	display: none;
+}
+.indicator.login .login_content{
+	display: block!important;
+}
+.indicator.sign .sign_content{
+	display: block!important;
+}
+
+.img_section{
+	overflow: auto;
+}
+.form_section, .img_section .content_section{
+	transition: 1s;
+}
+
+
+
+
+
+/*Login form section - Kiri Ke Center ( Login Out ) dan Center ke Kiri ( Login Active )*/
+.login_page.form_section.active{
+	margin-left: 0;
+}
+.login_page.form_section.out{
+	margin-left: 100%;
+}
+
+/*Login img section - Bawah Ke Atas ( Login Out ) dan Atas Ke Bawah ( Login Active )  */
+.login_page.img_section.active .content_section{
+	top: var(--top_imgContent_section);
+	transform: translateY(-50%);
+}
+.login_page.img_section.out .content_section{
+	top: -100%;
+	transform: none;
+}
+
+
+
+
+
+.sign_page{
+	display: none;
+}
+/*Sign form section - Kanan Ke Center ( Login Out ) dan Center ke Kanan ( Login Active )*/
+.sign_page.form_section.active{
+	margin-left: 0;
+}
+.sign_page.form_section.out{
+	margin-left: -1000px;
+}
+
+/* Sign Img Section - Atas ke Bawah ( Sign Out ) dan Bawah ke Atas ( Sign Active ) */
+.sign_page.img_section.out .content_section{
+	bottom: -1000px;
+}
+.sign_page.img_section.active .content_section{
+	bottom:	var(--top_imgContent_section);
+	transform: translateY(-50%);;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media( max-width: 768px){
+	.img_section{
+		display: none!important;
+	}
+
+	.indicator, .indicator.login{
+		left: 30%;
+	}
+
+}
+
+
+/*Auth Admin dan kode verifikasi*/
+.box_auth{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: auto;
+}
+.container_auth{
+	padding: 20px;
+	padding-top: 30px;
+	background: #fff;
+}
+.btn_icon{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+}
+.title_login{
+	margin-bottom: 40px;
+} 
+.title_login p{
+	color: grey;
+}
+.container_auth form > div{
+	margin-bottom: 30px;
+}
+.container_auth input{
+	padding: 20px;
+	border: none;
+	border-bottom: 2px solid #000;
+	border-radius: 0;
+	padding-left: 0;
+}
+.container_auth form button{
+	width: 100%;
+	margin-top: 30px;
+}
+
+.box_code{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+}
+.col_input{
+	width: 100px;
+	height: 100px;
+	background: #ccc;
+	margin-right: 20px;
+}
+.col_input input{
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: none;
+	text-align: center;
+	padding: 0;
+	font-size: 30px;
+	font-weight: bolder;
+}
+.footer_form{
+	width: 100%;
+	height: auto;
+}

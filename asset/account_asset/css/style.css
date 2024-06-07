@@ -1,0 +1,76 @@
+@font-face{
+	font-family: 'poppin';
+	src : url('../font/poppins/poppins.ttf')
+}
+
+@font-face{
+  font-family: 'sora';
+  src : url('../font/sora/sora.ttf')
+}
+
+@font-face{
+	font-family: 'lobster';
+	src : url('../font/lobster/Lobster-Regular.ttf')
+}
+
+
+@font-face{
+	font-family: 'pacific';
+	src : url('../font/pacific/Pacifico-Regular.ttf')
+}
+
+:root{
+	--basicBg : #E6E6FA
+}
+body{
+	background: var(--basicBg) !important;
+	font-family:sora !important;
+}
+
+.text_flow_multi1 {
+  /* Tampilkan 1 baris */
+  font-size: inherit;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  position: relative;
+  color: inherit;
+}
+.text_flow_multi2 {
+  /* Tampilkan 2 baris */
+  font-size: inherit;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  position: relative;
+  color: inherit;
+}
+
+
+.text_flow_multi3 {
+  /* Tampilkan 3 baris */
+  font-size: inherit;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  position: relative;
+  color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
