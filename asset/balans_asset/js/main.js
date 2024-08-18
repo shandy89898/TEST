@@ -197,16 +197,18 @@ $(document).ready(function(e) {
 	// btn content menu di menu section pada navigasi header
 	$('.btn_content_menu').on('click', function(e) {
 
+		// alert();
+
 		var btn_content_menu = $(this);
 		var content_menu_target = btn_content_menu.parents('.content_menu');
 
 		$('html').unbind('click');
 
 		//Jika yang dikliknya itu  adalah content menu yang sudah aktif, maka jangan dilanjutkan. Cukup hilangkan saja content menu yang dipilih
-		if ( content_menu_target.is('.content_menu.active') ) {	
-			content_menu_target.removeClass('active');
-			return false; //Menghentikan laju fungsi
-		}
+		// if ( content_menu_target.is('.content_menu.active') ) {	
+		// 	content_menu_target.removeClass('active');
+		// 	return false; //Menghentikan laju fungsi
+		// }
 
 		// non aktifkan content menu yang bukan di pilih
 		$('.content_menu').removeClass('active');
@@ -268,6 +270,7 @@ $(document).ready(function(e) {
 		var header = $( this ).parents('header');
 		var menu_section = header.find('.menu_section');
 		if ( menu_section.is(':visible') == false) {
+
 			// Ketika navnya sedang hilang, maka munculkan
 			menu_section.show(); 
 		}else{
@@ -351,20 +354,7 @@ $(document).ready(function(e) {
 
 	// Untuk faq
 	$('.header_faq').on('click', function(e) {
-		var header_faq = $(this);
-		var box_faq_target = header_faq.parents('.box_faq');
-
-		//Jika box_faq yang dipilih itu tadinya sudah buka atau aktif, maka tutup yang box_faq yang dipilih saja.
-		if ( box_faq_target.filter('.active').length > 0 ) {
-			box_faq_target.removeClass('active');
-			return false; //Menghentikan laju fungsi
-		}
-
-		//Hilangkan aktif di semua box_faq 
-		$('.box_faq').removeClass('active');
-
-		//Jadikan box_faq_target jadi aktif
-		box_faq_target.addClass('active', 'blind');
+		faq_event(this);
 	});
 
 	//======================================== END OF EVENT UNTUK HALAMAN LANDING =====================
@@ -435,6 +425,30 @@ function indicator_pageAuth(btn_auth) {
 	}
 
 }
+
+
+// ---------------------------------------- Event Berkaitan Dengan di Landing 
+
+
+function faq_event(obj) {
+	var header_faq = $(obj);
+	var box_faq_target = header_faq.parents('.box_faq');
+
+	//Jika box_faq yang dipilih itu tadinya sudah buka atau aktif, maka tutup yang box_faq yang dipilih saja.
+	if ( box_faq_target.filter('.active').length > 0 ) {
+		box_faq_target.removeClass('active');
+		return false; //Menghentikan laju fungsi
+	}
+
+	//Hilangkan aktif di semua box_faq 
+	$('.box_faq').removeClass('active');
+
+	//Jadikan box_faq_target jadi aktif
+	box_faq_target.addClass('active', 'blind');
+}
+
+
+// ---------------------------------------- Event Berkaitan Dengan di Landing 
 
 
 

@@ -52,3 +52,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Landing';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+//LOKASI
+$route['GET/Lokasi']['GET'] = 'Rest/get_lokasi';
+$route['POST/Lokasi']['POST'] = 'Rest/tambah_lokasi';
+$route['PUT/Lokasi/(:num)']['PUT'] = 'Rest/update_lokasi/$1';
+$route['DELETE/Lokasi/(:num)']['DELETE'] = 'Rest/delete_lokasi/$1';
+
+//PROYEK
+$route['GET/Proyek']['GET'] = 'Rest/get_proyek';
+$route['POST/Proyek']['POST'] = 'Rest/tambah_proyek';
+$route['PUT/Proyek/(:num)']['PUT'] = 'Rest/update_proyek/$1';
+$route['DELETE/Proyek/(:num)']['DELETE'] = 'Rest/delete_proyek/$1';

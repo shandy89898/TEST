@@ -52,5 +52,17 @@
 <!-- <script type="text/javascript" src="<?= base_url() ?>asset/balans_asset/js/main.js"></script> -->
 
 
+<script type="text/javascript">
+
+  //Script ini berlaku ke semua controller fitur berkaitan dengan Admin
+  $( function(e) {
+
+    //Melakukan scripting dom agar jika misalnya user tidak mengisi textarea saat update, maka yang diambil adalah deksripsi lama
+    var form_group = $('.deskripsi_lama').parents('.form-group');
+    var deskripsi_lama = form_group.find('.deskripsi_lama p').text();
+    form_group.find('textarea').val( deskripsi_lama ); //Agar summernote defaultnya jadi nilai deskripsi lama
+
+  } );
+</script>
 </body>
 </html>

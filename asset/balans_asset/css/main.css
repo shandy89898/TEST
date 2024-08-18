@@ -53,9 +53,10 @@ header nav{
 	font-size: 20px;
 }
 .logo_section{
-	display: flex;
+	/*display: flex;*/
 	padding-left: 0;
 	padding-top: 0;
+
 }
 .logo_section .logo_header{
 	width: 60px;
@@ -79,6 +80,7 @@ header nav{
 	/*background: red;*/
 	border-radius: 0;
 }
+
 /*Yang melayang menu_section_container*/
 .content_menu .menu_section_container{
 	position: fixed;
@@ -194,9 +196,23 @@ header nav{
 	text-decoration: none !important;
 	color:  #000;
 }
-.btn_contact{
-	border-radius: 60px !important;
+
+.contact_section{
+	padding: 0;
+	display: flex;
+	justify-content: right;
 }
+.btn_contact{
+	width: 150px;
+
+	border: 2px solid darkcyan;
+	border-radius: 4px !important;
+	margin-right: 10px;
+}
+.btn_contact i{
+	display: none;
+}
+
 
 
 .content_section.data_jenis_fitur.active{
@@ -300,28 +316,35 @@ section{
 #section_ads{
 	background: none !important;
 }
-#section_ads .marquee_container{
+.marquee_animasi{
 	width: 100%;
-	height: 56px;
+	height: 100px;
+	text-align: center;
+	overflow-x: hidden;
+	white-space: nowrap;
 	position: relative;
-	overflow: hidden;
+	margin-top: 50px;
 }
-.marquee_container .marquee{
+.item_animasi{
+	width: 100px;
+	height: 100%;
+	margin-right: 30px;
+	display: inline-block;
+	position: absolute;
+	z-index: 1;
+}
+.item_animasi.ex{
+	display: none;
+}
+.item_animasi, .item_animasi.ex{
+	transition: 10s;
+	transition-timing-function: ease-in-out;
+}
+
+.item_animasi img{
 	width: 100%;
 	height: 100%;
-	/*background: red;*/
-	position: absolute;
-	top: 0;
-	left: 0;
-	transition: 10s;
 }
-
-
-.marquee img{
-	width: 148px;
-	height: 100%;
-}
-
 
 /* Section_slide */
 .section_slide{
@@ -570,7 +593,14 @@ section{
 
 
 /* Responsive md */
-@media( max-width : 786px ){
+
+@media( max-width:  1109px){
+	.btn_contact.btn_coba{
+		display: none;
+	}
+}
+@media( max-width : 960px ){
+
 
 	.icon_bar{
 		display: inline-block;
@@ -643,18 +673,21 @@ section{
 		text-align: left !important;
 	}
 
-
-
-	.btn_contact .caption{
-		display: none;
-	}
-	.btn_contact i{
-		font-size: 30px;
-	}
 }
 
 /*Responsive sm*/
 @media( max-width: 576px){
+	.btn_contact{
+		width: auto;
+		border:  none;
+	}
+	.btn_contact .caption{
+		display: none;
+	}
+	.btn_contact i{
+		display: block;
+		font-size: 30px;
+	}
 	.col_faq{
 		margin-top: 20px;
 	}
